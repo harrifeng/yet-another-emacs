@@ -9,16 +9,9 @@
 
 (require 'package)
 
-;; If you want  to use the latest version
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-;; If you want to use the last tagged version
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
-
-;;(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
-
-(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("melpa-stable" . "http://elpa.emacs-china.org/melpa-stable/"))
+(add-to-list 'package-archives '("org" . "http://elpa.emacs-china.org/org/") t)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 
 ;increase garbage collection threshold for startup only
 (setq gc-cons-threshold 64000000)
@@ -33,7 +26,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("4639288d273cbd3dc880992e6032f9c817f17c4a91f00f3872009a099f5b3f84" default)))
+    ("eb02853c4a789d2cd00cc0c6e8e37532690fe70b5fddfc24e259f291048c5ad1" "4639288d273cbd3dc880992e6032f9c817f17c4a91f00f3872009a099f5b3f84" default)))
  '(ecb-options-version "2.50")
  '(indicate-empty-lines t)
  '(package-selected-packages (quote (skewer-mode use-package))))
